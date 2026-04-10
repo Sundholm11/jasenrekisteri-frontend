@@ -68,9 +68,8 @@ const columns = [
         dataField: 'firstName',
         text: 'Etunimi',
         sort: true,
-        align: 'center',
         headerAlign: 'center',
-        style: { textTransform: 'capitalize' },
+        style: { textAlign: 'center', textTransform: 'capitalize' },
     },
     {
         dataField: 'lastName',
@@ -91,10 +90,10 @@ const columns = [
         text: 'Email',
         sort: true,
         headerStyle: {
+            textAlign: 'center',
             width: '250px',
         },
         align: 'center',
-        headerAlign: 'center',
     },
     {
         dataField: 'hometown',
@@ -108,10 +107,10 @@ const columns = [
         text: 'TYY',
         sort: true,
         headerStyle: {
+            textAlign: 'center',
             width: '70px',
         },
         align: 'center',
-        headerAlign: 'center',
         formatter: (cell, row, rowIndex, extraData) => (
             <div>
                 {row.tyyMember ? (
@@ -131,10 +130,10 @@ const columns = [
         text: 'TIVIA',
         sort: true,
         headerStyle: {
+            textAlign: 'center',
             width: '80px',
         },
         align: 'center',
-        headerAlign: 'center',
         formatter: (cell, row, rowIndex, extraData) => (
             <div>
                 {row.tiviaMember ? (
@@ -162,8 +161,8 @@ const columns = [
         text: 'Varasto',
         sort: true,
         align: 'center',
-        headerAlign: 'center',
         headerStyle: {
+            textAlign: 'center',
             width: '100px',
         },
         formatter: (cell, row, rowIndex, extraData) => (
@@ -185,10 +184,10 @@ const columns = [
         text: 'Alkanut',
         sort: true,
         headerStyle: {
+            textAlign: 'center',
             width: '100px',
         },
         align: 'center',
-        headerAlign: 'center',
         formatter: (cell, row, rowIndex, extraData) => (
             <div>
                 {row.membershipStarts ? (
@@ -204,10 +203,10 @@ const columns = [
         text: 'Päättyy',
         sort: true,
         headerStyle: {
+            textAlign: 'center',
             width: '100px',
         },
         align: 'center',
-        headerAlign: 'center',
         formatter: membershipEndsFormatter,
     },
     {
@@ -215,8 +214,8 @@ const columns = [
         text: 'Jäsen',
         sort: true,
         align: 'center',
-        headerAlign: 'center',
         headerStyle: {
+            textAlign: 'center',
             width: '90px',
         },
         formatter: (cell, row, rowIndex, extraData) => (
